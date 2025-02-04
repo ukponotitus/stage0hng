@@ -1,39 +1,96 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #d1d1d1;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 .profile-card {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .profile-card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .profile-card h1, .profile-card h2 {
-    margin: 10px 0;
-  }
-  
-  .profile-card p {
-    margin: 5px 0;
-  }
-  
-  .profile-card a {
-    margin: 5px;
-    text-decoration: none;
-    color: #0073e6;
-  }
-  
-  @media (max-width: 600px) {
-    .profile-card {
-      padding: 15px;
-      width: 90%;
-    }
-  }
-  
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10%;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  /* height: 20rem; */
+  height: 70vh;
+}
+
+.profile-header {
+  background: linear-gradient(to bottom, #d82020, #a81414);
+  height: 23rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 40px;
+  position: relative;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+}
+
+.profilePicture{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  position: absolute;
+  bottom: -60px;
+}
+
+.profile-content {
+  padding: 50px 20px 800px;
+}
+
+.fullName {
+  margin: 10px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.jobTitle {
+  font-size: 16px;
+  color: #444;
+  font-weight: bold;
+}
+
+.shortBio {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 20px;
+  text-decoration: none;
+  color: #d82020;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: #a81414;
+}
+.lineheight{
+  width: 50%; 
+  background-color: #d82020;
+  border: #d82020 2px solid;
+  padding: 1px;
+  /* margin-bottom: 10px; */
+}
